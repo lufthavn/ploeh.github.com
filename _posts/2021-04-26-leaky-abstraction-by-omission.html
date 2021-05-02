@@ -318,4 +318,18 @@ Task&lt;IReadOnlyCollection&lt;Reservation&gt;&gt;&nbsp;<span style="color:#7453
 		</div>
 		<div class="comment-date">2021-05-02 11:04 UTC</div>
 	</div>
+	<div class="comment" id="bfb3b043757d4f07b129745a219d4c0d">
+	    <div class="comment-author"><a href="https://tobias.rocks">Tobias</a></div>
+	    <div class="comment-content">
+		<p>Thank you for the well-thought out response, Mark! </p>
+
+		<p>I completely agree that problems and discussions like these are what makes software design interesting. Indeed, more often than not it&#39;s a balancing act, more than it is a pursuit of the perfect solution.</p>
+
+		<p>I was also thinking something along the lines of a Restaurant type that could act as an aggregate root. Then ReadReservations could be moved as a member to this type. </p>
+
+		<p>Another approach could be examining the usage of the method. I don&#39;t know what the purpose of the ReadReservations method is, but it <em>looks</em> like a method that&#39;s used to query data for presentation to the user of the application. Perhaps this suggests a need for a separate read and write model? No doubt this would introduce more complexity to the application, but I guess that&#39;s where the balancing act comes into play again. :-)</p>
+
+	    </div>
+	    <div class="comment-date">2021-05-02 14:29 UTC</div>
+	</div>
 </div>
